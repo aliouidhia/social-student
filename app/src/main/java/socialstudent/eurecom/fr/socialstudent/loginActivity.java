@@ -1,8 +1,12 @@
 package socialstudent.eurecom.fr.socialstudent;
 
+import android.app.DialogFragment;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -16,7 +20,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class loginActivity extends AppCompatActivity {
+public class    loginActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     Button loginButton = null ;
@@ -67,14 +71,32 @@ public class loginActivity extends AppCompatActivity {
                             }
                         });
                 break;
+            case R.id.registerButton :
+                Intent i = new Intent(loginActivity.this,registerActivity.class);
+                startActivity(i);
+            default:
+                break ;
 
-                default:
-                    break ;
+
         }
     }
 
     private void updateUI(FirebaseUser user) {
+        if(user!=null){
+            Intent i = new Intent(loginActivity.this,mainActivity.class);
+            i.putExtra("user",user);
+            startActivity(i);
+        } else if (user==null)  {
+            AlertDialog.Builder builder= new AlertDialog.Builder(getApplication());
+            builder.setMessage("Wrong ID or Password").setNeutralButton("OK", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
 
+                }
+            });
+            AlertDialog dialog = builder.create();
+
+        }
     }
 
 
