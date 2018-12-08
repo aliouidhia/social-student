@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "39064855557",
-    "firebase_url": "https://socialstudent-f1905.firebaseio.com",
-    "project_id": "socialstudent-f1905",
-    "storage_bucket": "socialstudent-f1905.appspot.com"
+    "project_number": "697873447941",
+    "firebase_url": "https://socialstudent-91818.firebaseio.com",
+    "project_id": "socialstudent-91818",
+    "storage_bucket": "socialstudent-91818.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:39064855557:android:d75011bf9ffe7f4d",
+        "mobilesdk_app_id": "1:697873447941:android:d75011bf9ffe7f4d",
         "android_client_info": {
           "package_name": "socialstudent.eurecom.fr.socialstudent"
         }
       },
       "oauth_client": [
         {
-          "client_id": "39064855557-s7quct8gl70e20vln3k39gnfkgdpc4a1.apps.googleusercontent.com",
+          "client_id": "697873447941-7doab45j414ldcaj3s3ktu2aeke61l24.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "socialstudent.eurecom.fr.socialstudent",
@@ -23,13 +23,13 @@
           }
         },
         {
-          "client_id": "39064855557-rm7jj6icjdvg5fdkvc3109go1a8oupth.apps.googleusercontent.com",
+          "client_id": "697873447941-92u7lv9pul8kles3442vltpisujlqram.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBbgLKbJkn8Qwa6QHTx7BTsmWXi0Z3lkRU"
+          "current_key": "AIzaSyCNKH2e10_sW13ZJu7XP8gaQ4yBoc2sqfY"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "39064855557-rm7jj6icjdvg5fdkvc3109go1a8oupth.apps.googleusercontent.com",
+              "client_id": "697873447941-92u7lv9pul8kles3442vltpisujlqram.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
